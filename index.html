@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./assets/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | GitHub user search app</title>
+  </head>
+  <body>
+    <main id="main">
+      <div class="logo_and_switch_mode d_flex align_items">
+        <h1 class="logo">
+          devfinder
+        </h1>
+        <div class="switch-mode d_flex align_items">
+          <p class="light-mode" style="display: inline;">DARK</p>
+          <img class="switchMode-img" src="/assets/icon-moon.svg">
+        </div>
+      </div>
+
+      <div class="search_bar">
+        <img class="p_absolute" src="/assets/icon-search.svg" alt="search">
+        <input type="search" placeholder="Search GitHub username...">
+        <span class="no-result p_absolute font_15 ">No results</span>
+        <button onclick="getUser(); " class="search p_absolute">Search</button>
+      </div>
+
+      <div class="main_cart">
+        <div class="avatar d_flex row_direction ">
+          <img src="/assets/583231.png" alt="octoocat">
+          <div>
+            <div class="title-section d_flex row_direction ">
+              <div class="titles">
+                <h1>The Octocat</h1>
+                <a href="https://">@octocat</a>
+              </div>
+              <p class="joined font_15 ">Joined 25 Jan 2011</p>
+            </div>
+            <p class="profile-bio">This profile has no bio</p>
+          </div>
+        </div>
+        <div class="repos_and_links d_flex">
+          <div class="repos d_flex align_items row_direction ">
+            <div class="h-repos">
+              <h4>Repos</h4>
+              <h2>8</h2>
+            </div>
+
+            <div class="followers">
+              <h4>Followers</h4>
+              <h2>8098</h2>
+            </div>
+
+            <div class="following">
+              <h4>Following</h4>
+              <h2>218</h2>
+            </div>
+          </div>
+
+          <div class="links">
+            <div class="location flex">
+              <img src="/assets/icon-location.svg" alt="location-icon"> <p
+                class="font_15" style="display: inline;">San
+                Francisco</p>
+            </div>
+
+            <div class="twitter flex ">
+              <img src="/assets/icon-twitter.svg" alt="twitter-icon"> <a
+                class="not-avalaible font_15 " target="_blank"
+                href="https://twitter.com">Not
+                avalaible</a>
+            </div>
+
+            <div class="website flex ">
+              <img src="/assets/icon-website.svg" alt="website-icon"> <a
+                clas="font_15 " target="_blank" href="https://github.blog">https://github.blog</a>
+            </div>
+
+            <div class="company flex ">
+              <img src="/assets/icon-company.svg" alt="company-icon"> <a
+                class="font_15 " target="_blank" href="https://github.com">@github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
