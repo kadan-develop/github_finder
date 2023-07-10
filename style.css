@@ -191,13 +191,13 @@ a {
   margin-left: -20px;
 }
 
-.repos h4 {
+.repos h2 {
   font-size: 13px;
   font-weight: 400;
   color: var(--light-dark-blue);
 }
 
-.repos h2 {
+.repos h4 {
   font-size: 22px;
   font-weight: 700;
   color: var(--dark-blue);
@@ -370,11 +370,11 @@ a {
     margin-left: 0px;
   }
 
-  .repos h4 {
+  .repos h2 {
     font-size: 11px;
   }
 
-  .repos h2 {
+  .repos h4 {
     font-size: 16px;
   }
 
