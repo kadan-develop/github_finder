@@ -197,7 +197,7 @@ a {
   color: var(--light-dark-blue);
 }
 
-.repos h4 {
+.repos h3 {
   font-size: 22px;
   font-weight: 700;
   color: var(--dark-blue);
@@ -374,7 +374,7 @@ a {
     font-size: 11px;
   }
 
-  .repos h4 {
+  .repos h3 {
     font-size: 16px;
   }
 
