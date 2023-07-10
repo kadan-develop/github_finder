@@ -16,7 +16,7 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Check Here](https://www.frontendmentor.io/solutions/responsive-github-username-finder-gs-UeT9pHb)
 - Live Site URL: [Check Here](https://unique-lamington-7b8a40.netlify.app/)
 
 ## My process
