@@ -83,18 +83,18 @@ const renderUser = function (user) {
     <div class="repos_and_links d_flex">
     <div class="repos d_flex align_items row_direction">
       <div class="h-repos">
-        <h4>Repos</h4>
-        <h2>${user.public_repos}</h2>
+        <h2>Repos</h2>
+        <h3>${user.public_repos}</h3>
       </div>
 
       <div class="followers">
-        <h4>Followers</h4>
-        <h2>${user.followers}</h2>
+        <h2>Followers</h2>
+        <h3>${user.followers}</h3>
       </div>
 
       <div class="following">
-        <h4>Following</h4>
-        <h2>${user.following}</h2>
+        <h2>Following</h2>
+        <h3>${user.following}</h3>
       </div>
     </div>
 
