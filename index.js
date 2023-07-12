@@ -8,6 +8,7 @@ const btn = document.querySelector("button");
 const switch_mode = document.querySelector(".switch-mode");
 const lightModeText = document.querySelector(".light-mode");
 const noResultMessage = document.querySelector(".no-result");
+const at_least_one_word = document.querySelector(".at_least_one_word");
 const switchModeImg = document.querySelector(".switchMode-img");
 const GITHUB_URL = "https://api.github.com";
 
@@ -17,10 +18,15 @@ const getUser = async function () {
 
     const gettingUser = await fetch(`${GITHUB_URL}/users/${username}`);
 
-    if (!gettingUser.ok) {
+    if (input.value === "") {
+      at_least_one_word.style.display = "block";
+      input.placeholder = "";
+      fade_out_effect(at_least_one_word);
+    } else if (!gettingUser.ok) {
       noResultMessage.style.display = "block";
       input.value = "";
       input.placeholder = "";
+      fade_out_effect(noResultMessage);
     } else {
       const userData = await gettingUser.json();
 
@@ -40,6 +46,16 @@ const getUser = async function () {
   } catch (err) {
     throw err;
   }
+};
+
+// Timer effect
+
+const fade_out_effect = function (elClass) {
+  setTimeout(() => {
+    elClass.classList.add("fade_out_effect");
+    input.placeholder = "Search Github username...";
+    input.focus();
+  }, 2000);
 };
 
 const renderUser = function (user) {
