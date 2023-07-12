@@ -234,6 +234,12 @@ a {
   color: var(--not-avalaible-color) !important;
 }
 
+.fade_out_effect {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+
 /* Repetable class */
 .d_flex {
   display: flex;
@@ -398,5 +404,12 @@ a {
   .no-result {
     right: 105px;
     top: 20px;
+    font-size: 13px;
+  }
+
+  .no-result.at_least_one_word {
+    font-size: 13px;
+    right: 35px;
+    top: 65px;
   }
 }
