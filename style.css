@@ -34,13 +34,15 @@ body {
 }
 
 #main {
-  width: 730px;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 730px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   gap: 30px;
-  margin: 0 auto;
-  transform: translateX(0) translateY(25%);
 }
 
 /* LOGO AND SWITCH MODE */
@@ -287,14 +289,14 @@ a {
 /* /////////////////////////////////////////////////////// */
 /* ////////////////////////////////////////////////////// */
 /* MOBILE SIZE  */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) {
   .logo {
     font-size: 26px;
   }
 
   #main {
     width: 327px;
-    transform: translateX(0) translateY(15%);
+    margin-top:35px;
   }
 
   .search_bar > input {
