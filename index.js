@@ -22,7 +22,7 @@ const getUser = async function () {
       at_least_one_word.style.display = "block";
       input.placeholder = "";
       fade_out_effect(at_least_one_word);
-    } else if (!gettingUser.ok) {
+    } else if (gettingUser.status === 404) {
       noResultMessage.style.display = "block";
       input.value = "";
       input.placeholder = "";
@@ -49,13 +49,13 @@ const getUser = async function () {
 };
 
 // Timer effect
-
 const fade_out_effect = function (elClass) {
   setTimeout(() => {
     elClass.classList.add("fade_out_effect");
     input.placeholder = "Search Github username...";
     input.focus();
   }, 2000);
+  elClass.classList.remove("fade_out_effect");
 };
 
 const renderUser = function (user) {
